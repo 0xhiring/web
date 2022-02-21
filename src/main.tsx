@@ -1,4 +1,6 @@
 import 'rsuite/dist/rsuite.min.css';
+import './datetime';
+import './i18n';
 import './public/index.css';
 
 import React from 'react';
