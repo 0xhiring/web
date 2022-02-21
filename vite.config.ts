@@ -8,7 +8,4 @@ export default defineConfig({
       jsxImportSource: '@emotion/react',
     }),
   ],
-  define: {
-    global: {},
-  },
 });

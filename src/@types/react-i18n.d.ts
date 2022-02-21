@@ -1,7 +1,10 @@
 import 'react-i18next';
 
 declare module 'react-i18next' {
-  export interface Resources {
-    app: typeof import('../public/locales/en/app.json');
+  interface CustomTypeOptions {
+    defaultNS: 'ns1';
+    resources: {
+      app: typeof import('../public/locales/en/app.json');
+    };
   }
 }
