@@ -12,7 +12,7 @@ export default function AppHeader() {
           <a className="navbar-brand logo">0xHiring</a>
         </Navbar.Brand>
         <Nav>
-          <Nav.Item icon={<Icon as={FiHome} />}>{t('app:home')}</Nav.Item>
+          <Nav.Item icon={<Icon as={FiHome} />}>{t('home')}</Nav.Item>
           <Nav.Item>News</Nav.Item>
           <Nav.Item>Products</Nav.Item>
           <Dropdown title="About">

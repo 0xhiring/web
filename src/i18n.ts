@@ -6,7 +6,7 @@ import { initReactI18next } from 'react-i18next';
 import appEn from './public/locales/en/app.json';
 
 i18n.use(initReactI18next).init({
-  ns: ['landing', 'app'],
+  ns: ['app'],
   defaultNS: 'app',
   nsSeparator: ':',
   resources: {
