@@ -3,6 +3,8 @@ import { combineReducers } from 'redux';
 import { FLUSH, PAUSE, PERSIST, persistReducer, persistStore, PURGE, REGISTER, REHYDRATE } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
+import userReducer from './user.reducer';
+
 function createReducer() {
   const persistConfig = {
     key: '0xhiring',
@@ -10,7 +12,11 @@ function createReducer() {
     blacklist: [],
   };
 
-  const reducer = persistReducer(persistConfig, combineReducers({}));
+  const rootReducer = combineReducers({
+    user: userReducer.reducer,
+  });
+
+  const reducer = persistReducer(persistConfig, rootReducer);
 
   const store = configureStore({
     reducer,
@@ -28,8 +34,12 @@ function createReducer() {
   return { store, persistor };
 }
 
-export const actions = {} as const;
+export const actions = {
+  user: userReducer.actions,
+} as const;
 
-export const selectors = {} as const;
+export const selectors = {
+  user: userReducer.selectors,
+} as const;
 
 export const { store, persistor } = createReducer();

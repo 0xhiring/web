@@ -12,10 +12,10 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["@emotion/react/types/css-prop", "node", "vite/client"],
+    "types": ["node", "vite/client"],
     "typeRoots": ["./node_modules/@types", "./src/@types"]
   },
   "include": ["src"],
