@@ -14,13 +14,13 @@
   },
   "dependencies": {
     "@chakra-ui/icons": "1.1.7",
-    "@chakra-ui/react": "1.8.5",
+    "@chakra-ui/react": "1.8.6",
     "@emotion/react": "11.8.1",
     "@emotion/styled": "11.8.1",
     "@reduxjs/toolkit": "1.8.0",
     "@tiptap/react": "2.0.0-beta.108",
     "@tiptap/starter-kit": "2.0.0-beta.183",
-    "dayjs": "1.10.7",
+    "dayjs": "1.10.8",
     "framer-motion": "6.2.8",
     "i18next": "21.6.12",
     "numbro": "2.3.6",
@@ -30,16 +30,16 @@
     "react-i18next": "11.15.5",
     "react-icons": "4.3.1",
     "react-redux": "7.2.6",
-    "react-router-dom": "6.2.1",
+    "react-router-dom": "6.2.2",
     "redux-persist": "6.0.0"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
     "@types/react": "17.0.39",
-    "@types/react-dom": "17.0.11",
-    "@types/react-redux": "7.1.22",
-    "@typescript-eslint/eslint-plugin": "5.12.1",
-    "@typescript-eslint/parser": "5.12.1",
+    "@types/react-dom": "17.0.12",
+    "@types/react-redux": "7.1.23",
+    "@typescript-eslint/eslint-plugin": "5.13.0",
+    "@typescript-eslint/parser": "5.13.0",
     "@vitejs/plugin-react": "1.2.0",
     "eslint": "8.10.0",
     "eslint-config-prettier": "8.4.0",
@@ -50,6 +50,6 @@
     "eslint-plugin-simple-import-sort": "7.0.0",
     "prettier": "2.5.1",
     "typescript": "4.5.5",
-    "vite": "2.8.4"
+    "vite": "2.8.6"
   }
 }

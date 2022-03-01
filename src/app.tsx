@@ -1,8 +1,9 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { Provider } from 'react-redux';
+import { HashRouter as Router } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 
-import AppRouter from './app-router';
+import AppRoutes from './app-routes';
 import { persistor, store } from './reducers';
 import theme from './themes';
 
@@ -11,7 +12,9 @@ export default function App() {
     <ChakraProvider theme={theme}>
       <Provider store={store}>
         <PersistGate loading={<div />} persistor={persistor}>
-          <AppRouter />
+          <Router>
+            <AppRoutes />
+          </Router>
         </PersistGate>
       </Provider>
     </ChakraProvider>
